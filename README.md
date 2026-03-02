@@ -5,115 +5,60 @@
 //what are topics its will be covered
 //which usecase
 
-1️⃣ Running Procedure (Project Execution Flow)
+📖 Project Overview
 
-Requirement Analysis
+The PalindromeChecker App is a console-based Java application that checks whether a given string is a palindrome.
 
-Understand business needs
+A palindrome is a word, phrase, or sequence that reads the same forward and backward (e.g., madam, racecar).
 
-Define project scope
+This project focuses on strengthening core Java fundamentals and understanding basic data structures.
 
-Identify stakeholders
+🎯 Objective
 
-Planning
+Design and implement a Java console application.
 
-Create project timeline
+Validate whether a given string is a palindrome.
 
-Assign resources
+Strengthen understanding of:
 
-Risk assessment
+Java syntax
 
-Design Phase
+String handling
 
-System architecture design
+Conditional statements
 
-UI/UX design (if applicable)
+User input handling
 
-Database schema design
+🔄 Project Flow
 
-Development
+Program starts.
 
-Frontend development
+main() method is executed.
 
-Backend development
+User is prompted to enter a string.
 
-API integration
+The string is reversed.
 
-Testing
+The original string is compared with the reversed string.
 
-Unit testing
+If both are equal → It is a palindrome.
 
-Integration testing
+Otherwise → It is not a palindrome.
 
-User Acceptance Testing (UAT)
+Result is displayed on the console.
 
-Deployment
+Program exits.
 
-Production setup
+🧩 Use Case Covered
+✅ UC2 – Check Palindrome from User Input
 
-Deployment to server/cloud
+Actor: User
 
-Monitoring setup
+Description:
+The system accepts a string from the user and checks whether it is a palindrome.
 
-Maintenance & Support
+Precondition:
+Program is compiled successfully.
 
-Bug fixes
-
-Performance optimization
-
-Updates & feature enhancements
-
-2️⃣ Flow of the Project
-
-Idea/Problem Identification
-⬇
-Requirement Gathering
-⬇
-System Design
-⬇
-Implementation
-⬇
-Testing
-⬇
-Deployment
-⬇
-Maintenance
-
-3️⃣ Objective of the Project
-
-To solve a specific problem efficiently.
-
-To automate manual processes.
-
-To improve performance and productivity.
-
-To provide a user-friendly solution.
-
-To ensure scalability and reliability.
-
-(You can customize this based on your specific project.)
-
-4️⃣ Topics Covered
-
-Introduction to the problem
-
-Literature review / Background study
-
-System architecture
-
-Technologies used
-
-Database design
-
-Implementation details
-
-Testing methodologies
-
-Security considerations
-
-Deployment strategy
-
-Future enhancements
-
-5️⃣ Use Cases
-uc1- welcomepagegit
+Postcondition:
+Palindrome validation result is displayed.
