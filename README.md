@@ -5,60 +5,81 @@
 //what are topics its will be covered
 //which usecase
 
-📖 Project Overview
+1.Objective
 
-The PalindromeChecker App is a console-based Java application that checks whether a given string is a palindrome.
+The objective of the PalindromeChecker App is to develop a console-based Java application that checks whether a given string is a palindrome.
+This use case focuses on implementing palindrome validation using a Stack data structure, while improving understanding of Java programming concepts and data structures.
 
-A palindrome is a word, phrase, or sequence that reads the same forward and backward (e.g., madam, racecar).
+2.Running Procedure
 
-This project focuses on strengthening core Java fundamentals and understanding basic data structures.
+Save the Java file as
+UseCase5PalindromeCheckerApp.java
 
-🎯 Objective
+Open Command Prompt / Terminal in the project folder.
 
-Design and implement a Java console application.
+Compile the program using:
 
-Validate whether a given string is a palindrome.
+javac UseCase5PalindromeCheckerApp.java
 
-Strengthen understanding of:
+Run the program using:
 
-Java syntax
+java UseCase5PalindromeCheckerApp
 
-String handling
+Enter a string when prompted, and the program will display whether it is a Palindrome or Not.
 
-Conditional statements
+Flow of the Project
 
-User input handling
+The program starts and asks the user to enter a string.
 
-🔄 Project Flow
+Each character of the string is pushed into the stack.
 
-Program starts.
+Characters are then popped from the stack to form a reversed string.
 
-main() method is executed.
+The reversed string is compared with the original string.
 
-User is prompted to enter a string.
+If both strings match, the program prints Palindrome.
 
-The string is reversed.
+Otherwise, it prints Not a Palindrome.
 
-The original string is compared with the reversed string.
+3.Topics Covered
 
-If both are equal → It is a palindrome.
+The following concepts are covered in this project:
 
-Otherwise → It is not a palindrome.
+Java Programming Basics
 
-Result is displayed on the console.
+Console-Based Input/Output
 
-Program exits.
+String Handling
 
-🧩 Use Case Covered
-✅ UC2 – Check Palindrome from User Input
+Data Structures
 
-Actor: User
+Stack (LIFO Principle)
 
-Description:
-The system accepts a string from the user and checks whether it is a palindrome.
+Push Operation
 
-Precondition:
-Program is compiled successfully.
+Pop Operation
 
-Postcondition:
-Palindrome validation result is displayed.
+Palindrome Logic
+
+Conditional Statements (if-else)
+
+Looping (for loop, while loop)
+
+Use Case Implemented
+UC5: Stack-Based Palindrome Checker
+
+Goal:
+To check whether a string is a palindrome using a Stack.
+
+Process:
+
+Push characters into the stack.
+
+Pop characters to reverse the string.
+
+Compare the reversed string with the original string.
+
+Display the result.git add
+
+Data Structure Used:
+Stack
