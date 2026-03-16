@@ -5,96 +5,77 @@
 //what are topics its will be covered
 //which usecase
 
-1.Objective
+1Palindrome Checker App – UC10
+Objective
 
-The objective of this use case is to develop a console-based Java application that checks whether a given string is a palindrome by using both Queue and Stack data structures.
-This implementation helps demonstrate the difference between FIFO (First In First Out) and LIFO (Last In First Out) operations while validating palindrome logic.
+The objective of the Palindrome Checker App (UC10) is to design and implement a console-based Java program that checks whether a given string is a palindrome while ignoring spaces and letter case. This use case demonstrates the importance of string preprocessing techniques such as normalization and the use of regular expressions before applying palindrome logic.
 
-2.Running Procedure
+Running Procedure
 
-Save the Java file as
-UseCase6PalindromeCheckerApp.java
+Follow the steps below to compile and run the program:
 
-Open Command Prompt / Terminal in the project directory.
+Save the program file as UseCase10PalindromeCheckerApp.java.
 
-Compile the program using:
+Open Command Prompt / Terminal.
 
-javac UseCase6PalindromeCheckerApp.java
+Navigate to the folder where the file is stored.
+
+Compile the program using the following command:
+
+javac UseCase10PalindromeCheckerApp.java
 
 Run the program using:
 
-java UseCase6PalindromeCheckerApp
+java UseCase10PalindromeCheckerApp
 
-Enter a string when prompted, and the program will display whether the string is a Palindrome or Not.
+Enter a string when prompted.
 
-3.Flow of the Project
+The program will display whether the string is Palindrome or Not a Palindrome.
 
-The program asks the user to enter a string.
+Flow of the Project
 
-Each character of the string is:
+The program starts and asks the user to enter a string.
 
-Enqueued into a Queue (FIFO)
+The input string is normalized by:
 
-Pushed into a Stack (LIFO)
+Removing spaces using regular expressions.
 
-The program then:
+Converting all characters to lowercase.
 
-Dequeues a character from the Queue
+Two pointers are used to compare characters from the beginning and end of the string.
 
-Pops a character from the Stack
+If the characters match, the pointers move toward the center.
 
-Both characters are compared.
+If any mismatch occurs, the string is declared Not a Palindrome.
 
-If all characters match during the comparison, the string is a Palindrome.
-
-If any mismatch occurs, the string is Not a Palindrome.
+If all characters match, the string is declared a Palindrome.
 
 Topics Covered
 
-This project covers the following programming and data structure concepts:
+This project covers the following programming concepts:
 
 Java Programming Basics
 
-Console Input and Output
+String Processing in Java
 
-String Handling
+Case-Insensitive String Comparison
 
-Data Structures
+Regular Expressions in Java
 
-Stack (LIFO Principle)
+Two-Pointer Technique
 
-Queue (FIFO Principle)
+Palindrome Checking Logic
 
-Push Operation
+Console-Based User Input
 
-Pop Operation
+Use Case Covered
+UC10 – Case-Insensitive & Space-Ignored Palindrome Checker
 
-Enqueue Operation
+This use case checks whether a string is a palindrome by ignoring spaces and letter case differences. The program first preprocesses the string using regular expressions and string normalization, and then applies palindrome checking logic.
 
-Dequeue Operation
+Data Structure Used:
+String / Character Array
 
-Conditional Statements (if-else)
+Conclusion
 
-Loops (for loop)
-
-Use Case Implemented
-UC6: Queue + Stack Based Palindrome Check
-
-4.Goal:
-To demonstrate the difference between Stack (LIFO) and Queue (FIFO) while checking if a string is a palindrome.
-
-Process:
-
-Enqueue characters into a Queue.
-
-Push characters into a Stack.
-
-Compare dequeue (queue) output with pop (stack) output.
-
-If both outputs match for all characters, the string is a Palindrome.
-
-5.Data Structures Used:
-
-Queue
-
-Stack
+The Case-Insensitive and Space-Ignored Palindrome Checker demonstrates how string preprocessing techniques can improve algorithm accuracy. By removing unnecessary characters and standardizing the input format, the program ensures reliable palindrome validation for real-world text inputs.
