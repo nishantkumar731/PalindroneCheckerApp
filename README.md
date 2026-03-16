@@ -1,81 +1,75 @@
-# PalindroneCheckerApp
-//running procedure
-//flow of project
-//objective
-//what are topics its will be covered
-//which usecase
-
-1Palindrome Checker App – UC10
+#PalindroneCheckerApp
+/Palindrome Checker App – UC11
 Objective
 
-The objective of the Palindrome Checker App (UC10) is to design and implement a console-based Java program that checks whether a given string is a palindrome while ignoring spaces and letter case. This use case demonstrates the importance of string preprocessing techniques such as normalization and the use of regular expressions before applying palindrome logic.
+The objective of the Palindrome Checker App (UC11) is to implement a palindrome validation system using Object-Oriented Programming (OOP) principles in Java. In this use case, the palindrome checking logic is encapsulated inside a dedicated class, making the program more modular, reusable, and easier to maintain.
 
 Running Procedure
 
 Follow the steps below to compile and run the program:
 
-Save the program file as UseCase10PalindromeCheckerApp.java.
+Save the program file as UseCase11PalindromeCheckerApp.java.
 
 Open Command Prompt / Terminal.
 
-Navigate to the folder where the file is stored.
+Navigate to the directory where the file is stored.
 
 Compile the program using the following command:
 
-javac UseCase10PalindromeCheckerApp.java
+javac UseCase11PalindromeCheckerApp.java
 
 Run the program using:
 
-java UseCase10PalindromeCheckerApp
+java UseCase11PalindromeCheckerApp
 
 Enter a string when prompted.
 
-The program will display whether the string is Palindrome or Not a Palindrome.
+The program will display whether the given string is Palindrome or Not a Palindrome.
 
 Flow of the Project
 
-The program starts and asks the user to enter a string.
+The program starts and prompts the user to enter a string.
 
-The input string is normalized by:
+A PalindromeChecker class is created to handle palindrome validation.
 
-Removing spaces using regular expressions.
+The main program creates an object of the PalindromeChecker class.
 
-Converting all characters to lowercase.
+The checkPalindrome() method is called using the object.
 
-Two pointers are used to compare characters from the beginning and end of the string.
+The method processes the string by normalizing it (removing spaces and converting to lowercase).
 
-If the characters match, the pointers move toward the center.
+Characters from the start and end of the string are compared.
 
-If any mismatch occurs, the string is declared Not a Palindrome.
-
-If all characters match, the string is declared a Palindrome.
+If all characters match, the string is declared a Palindrome; otherwise, it is Not a Palindrome.
 
 Topics Covered
 
 This project covers the following programming concepts:
 
-Java Programming Basics
+Java Programming Fundamentals
 
-String Processing in Java
+Object-Oriented Programming (OOP)
 
-Case-Insensitive String Comparison
+Encapsulation
 
-Regular Expressions in Java
+Single Responsibility Principle
 
-Two-Pointer Technique
+Class and Object Creation
 
-Palindrome Checking Logic
+Method Design and Reusability
 
-Console-Based User Input
+String Processing
+
+Palindrome Checking Algorithm
 
 Use Case Covered
-UC10 – Case-Insensitive & Space-Ignored Palindrome Checker
+UC11 – Object-Oriented Palindrome Service
 
-This use case checks whether a string is a palindrome by ignoring spaces and letter case differences. The program first preprocesses the string using regular expressions and string normalization, and then applies palindrome checking logic.
+This use case demonstrates how palindrome logic can be encapsulated inside a dedicated service class. The class exposes a method called checkPalindrome() that can be reused by other parts of the program. This approach improves code organization and follows the Single Responsibility Principle.
 
 Data Structure Used:
-String / Character Array
+Internal structures such as Array or Stack may be used inside the service class for palindrome checking.
 
 Conclusion
 
-The Case-Insensitive and Space-Ignored Palindrome Checker demonstrates how string preprocessing techniques can improve algorithm accuracy. By removing unnecessary characters and standardizing the input format, the program ensures reliable palindrome validation for real-world text inputs.
+The Object-Oriented Palindrome Service demonstrates how OOP principles can be applied to structure a program effectively. By separating the palindrome logic into a dedicated class, the code becomes more modular, reusable, and maintainable, which is an important practice in professional software development.
