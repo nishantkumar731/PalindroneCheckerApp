@@ -1,75 +1,89 @@
 #PalindroneCheckerApp
-/Palindrome Checker App – UC11
+/Palindrome Checker App – UC12
 Objective
 
-The objective of the Palindrome Checker App (UC11) is to implement a palindrome validation system using Object-Oriented Programming (OOP) principles in Java. In this use case, the palindrome checking logic is encapsulated inside a dedicated class, making the program more modular, reusable, and easier to maintain.
+The objective of Use Case 12 (UC12) is to implement a flexible palindrome checking system using the Strategy Design Pattern in Java. This approach allows different palindrome algorithms to be selected dynamically at runtime. It improves the modularity, scalability, and maintainability of the application by separating the algorithm implementations from the main application logic.
 
 Running Procedure
 
-Follow the steps below to compile and run the program:
+Follow these steps to compile and run the program:
 
-Save the program file as UseCase11PalindromeCheckerApp.java.
+Save the program file as UseCase12PalindromeCheckerApp.java.
 
 Open Command Prompt / Terminal.
 
-Navigate to the directory where the file is stored.
+Navigate to the directory where the file is saved.
 
-Compile the program using the following command:
+Compile the program using the command:
 
-javac UseCase11PalindromeCheckerApp.java
+javac UseCase12PalindromeCheckerApp.java
 
 Run the program using:
 
-java UseCase11PalindromeCheckerApp
+java UseCase12PalindromeCheckerApp
 
-Enter a string when prompted.
+Select the palindrome strategy when prompted.
 
-The program will display whether the given string is Palindrome or Not a Palindrome.
+Enter the string to check whether it is a palindrome.
+
+The program will display the result.
 
 Flow of the Project
 
-The program starts and prompts the user to enter a string.
+The program starts and displays available palindrome strategies.
 
-A PalindromeChecker class is created to handle palindrome validation.
+The user selects a strategy (Stack or Deque).
 
-The main program creates an object of the PalindromeChecker class.
+The program asks the user to enter a string.
 
-The checkPalindrome() method is called using the object.
+A PalindromeStrategy interface defines a common method checkPalindrome().
 
-The method processes the string by normalizing it (removing spaces and converting to lowercase).
+Different classes implement this interface:
 
-Characters from the start and end of the string are compared.
+StackStrategy
 
-If all characters match, the string is declared a Palindrome; otherwise, it is Not a Palindrome.
+DequeStrategy
+
+Based on the user’s choice, the selected strategy is injected at runtime.
+
+The chosen algorithm processes the string and checks whether it is a palindrome.
+
+The result is displayed to the user.
 
 Topics Covered
 
-This project covers the following programming concepts:
+This project demonstrates the following programming concepts:
 
 Java Programming Fundamentals
 
 Object-Oriented Programming (OOP)
 
-Encapsulation
+Interface Implementation
 
-Single Responsibility Principle
+Polymorphism
 
-Class and Object Creation
+Strategy Design Pattern
 
-Method Design and Reusability
+Dynamic Algorithm Selection
 
-String Processing
+Stack Data Structure
 
-Palindrome Checking Algorithm
+Deque Data Structure
 
 Use Case Covered
-UC11 – Object-Oriented Palindrome Service
+UC12 – Strategy Pattern for Palindrome Algorithms
 
-This use case demonstrates how palindrome logic can be encapsulated inside a dedicated service class. The class exposes a method called checkPalindrome() that can be reused by other parts of the program. This approach improves code organization and follows the Single Responsibility Principle.
+This use case demonstrates how multiple palindrome checking algorithms can be implemented using the Strategy Design Pattern. Each algorithm is implemented as a separate strategy class that follows a common interface. The program selects and executes the appropriate algorithm dynamically at runtime.
+
+Strategies Implemented:
+
+Stack Strategy – Uses a stack to reverse characters and compare.
+
+Deque Strategy – Uses a double-ended queue to compare characters from both ends.
 
 Data Structure Used:
-Internal structures such as Array or Stack may be used inside the service class for palindrome checking.
+Varies depending on the selected strategy (Stack or Deque).
 
 Conclusion
 
-The Object-Oriented Palindrome Service demonstrates how OOP principles can be applied to structure a program effectively. By separating the palindrome logic into a dedicated class, the code becomes more modular, reusable, and maintainable, which is an important practice in professional software development.
+The Strategy Pattern based Palindrome Checker demonstrates how software design patterns can improve flexibility and maintainability. By separating algorithms into individual strategy classes, the program allows easy addition of new palindrome checking methods without modifying the core application logic.
